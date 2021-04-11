@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style> h2{margin-bottom: 5px;}
+        </style>
+</head>
+<body bgcolor="orange">
+    <h1 style="text-align: center; font-size: 70;">Earthquake Damage Predictor</h1>
+    <br> <br>
+    <img style="text-align: center;"src="earthquake.jpg" alt="">
+    <br>
+    <form style="text-align: center; font-size: 30;"action="/input_data" method="post">
+        <h2><b>Number of Floors:</b></h2>
+        <input type="text" name='field1'><br>
+<br>
+        <h2><b>Age of Building:</b></h2>
+        <input type="text" name='field2'><br>
+        <br>
+        <h2><b>Base Area:</b></h2>
+        <input type="text" name='field3'><br>
+        <br>
+        <h2><b>Original Height:</b></h2>
+        <input type="text" name='field4'><br>
+        <br>
+        <h2><b>Land Surface Condition</b> </h2> (0 = Steep Slope, 1 = Moderate Slope, 2 = Flat)<br>
+        <input type="text" name='field5'><br>
+        <br>
+        <h2><b>Foundation Type:</b></h2> (1 = Mud mortar-Stone/Brick, 2 = Bamboo/Timber, 3 = Cement-Stone/Brick, 4 = Reinforced Cement)<br>
+        <input type="text" name='field6'><br>
+        <br>
+        <h2><b>Ground Floor Type:</b> </h2>(1 = Mud, 2 = Timber, 3 = Brick/Stone, 4 = Reinforced Cement)<br>
+        <input type="text" name='field7'><br>
+        <br>
+        <h2><b>Position:</b></h2> (0 = Attached on No side, 1 = Attached on 1 side, 2 = Attached on 2 Side, 3 = Attached on 3 Side) <br>
+        <input type="text" name='field8'><br>
+        <br>
+      <input type="submit" value="predict">
+      </form>
+</body>
+</html>
